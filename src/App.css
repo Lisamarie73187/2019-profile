@@ -1,33 +1,77 @@
 .App {
-  text-align: center;
+  margin: 0px 10%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.homeWrapper {
+  border-bottom: 1px solid #d9d7dc;
+  padding-bottom: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.headerContainer{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.nameWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menuWrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.name {
+  padding-left: 25px;
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 600;
+  color: #5a585d;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+}
+
+.menu {
+  padding: 0px 25px;
+  font-family: 'News Cycle', sans-serif;
+  color: #5a585d;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+
+.linksWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon {
+  font-size: 35px;
+  color: #9e9ca1;
+  padding-right: 20px;
+}
+
+.aboutText {
+  font-family: 'News Cycle', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: #5a585d;
+  width: 50%;
+  line-height: 31px;
 }
