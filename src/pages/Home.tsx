@@ -1,6 +1,7 @@
 import React from 'react';
 import {FaBehanceSquare, FaEnvelopeSquare, FaGithubSquare, FaLinkedin} from 'react-icons/fa';
 import LMHlogo from '../assets/LMHlogo.png';
+import {Project} from '../components/Project';
 
 export const Home = () => {
   return (
@@ -35,6 +36,8 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      <div className="border"/>
+      <Project />
     </div>
   );
 };
