@@ -11,6 +11,15 @@ const goalsyImages = [
 
 const goalsyImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/goalsy/thumbnailVertical.png';
 
+const goalsyNotes = {
+  title: 'PERSONAL PROJECT',
+  subTitle: 'January 2018 | Mobile Sept 2019',
+  github: {
+    mobile: 'https://github.com/Lisamarie73187/goalsy-native',
+    web: 'https://github.com/Lisamarie73187/goal-tracker',
+  },
+};
+
 const rexImages = [
   'https://portfoliolisa.s3-us-west-1.amazonaws.com/rex/RexSliderHome1.png',
   'https://portfoliolisa.s3-us-west-1.amazonaws.com/rex/RexAboutSlider2.png',
@@ -18,6 +27,14 @@ const rexImages = [
 ];
 
 const rexImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/rex/rex.png';
+
+const rexNotes = {
+  title: 'FREELANCE PROJECT',
+  subTitle: 'April 2018 ',
+  github: {
+    web: 'https://github.com/Lisamarie73187/rex-sports',
+  },
+};
 
 const gyftImages = [
   'https://portfoliolisa.s3-us-west-1.amazonaws.com/gyft/GyftHomeSlider1.png',
@@ -27,14 +44,33 @@ const gyftImages = [
 
 const gyftImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/gyft/gyftThumbnailTall.png';
 
+const tictacttoeImages = [
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/tictactoe/tictactoesliderone.png',
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/tictactoe/tictactoeslider2.png',
+];
+
+const tictactoeImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/tictactoe/tictactoethumbnail.png';
+
+const scentricImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricThumbnailLong.png';
+
 interface Props {}
 
 export const Project = (props: Props) => {
   return (
     <div className="projectContainer">
-      <LightboxExample images={goalsyImages} thumbnail={goalsyImage} />
-      <ProjectLong images={rexImages} thumbnail={rexImage} />
-      <LightboxExample images={gyftImages} thumbnail={gyftImage} />
+      <div>
+        <LightboxExample images={goalsyImages} thumbnail={goalsyImage} notes={goalsyNotes} />
+        <LightboxExample images={gyftImages} thumbnail={scentricImage} notes={goalsyNotes} />
+      </div>
+      <div>
+        <ProjectLong images={rexImages} thumbnail={rexImage} notes={rexNotes} />
+        <ProjectLong images={tictacttoeImages} thumbnail={tictactoeImage} notes={goalsyNotes} />
+        <ProjectLong images={rexImages} thumbnail={rexImage} notes={goalsyNotes} />
+      </div>
+      <div>
+        <LightboxExample images={gyftImages} thumbnail={gyftImage} notes={goalsyNotes} />
+        <LightboxExample images={goalsyImages} thumbnail={goalsyImage} notes={goalsyNotes} />
+      </div>
     </div>
   );
 };

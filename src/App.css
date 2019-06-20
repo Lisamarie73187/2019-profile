@@ -85,15 +85,23 @@
   margin: 20px;
 }
 
+.projectWrapper {
+  cursor: pointer;
+}
+
+.projectWrapper:hover {
+  transform: scale(1.02);
+}
+
 .picture {
 }
 
 .imageLong {
-  width: 450px;
+  width: 420px;
 }
 
 .imageTall {
-  width: 320px;
+  width: 330px;
 }
 
 .border {
@@ -103,3 +111,67 @@
   margin-top: 150px;
   margin-bottom: 80px;
 }
+
+/*notes*/
+
+.notesWrapper {
+  background-color: #fdfbf9;
+  padding: 20px 40px;
+  margin-bottom: 30px;
+}
+
+.notesTitle{
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  font-size: 20px;
+  color: #525252;
+}
+
+.notesSubTitle{
+  font-family: 'News Cycle', sans-serif;
+  letter-spacing: 1px;
+  font-size: 14px;
+  color: #525252;
+}
+
+.githubWrapper {
+  display: flex;
+  flex-direction: row;
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #525252;
+  padding-top: 10px;
+}
+
+.github {
+  padding-right: 8px;
+}
+
+.githubATag {
+  font-family: 'News Cycle', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #525252;
+  padding: 0px 5px;
+  text-decoration: none;
+}
+
+.githubATagSingle {
+  font-family: 'News Cycle', sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #525252;
+  text-decoration: none;
+}
+
+.githubATag:hover {
+  font-weight: 800;
+}
+
+.githubATagSingle:hover {
+  font-weight: 800;
+}
+

@@ -2,9 +2,22 @@ import React, {Component} from 'react';
 import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
+interface Github {
+  mobile?: string;
+  web: string;
+}
+
+interface Notes {
+  title: string;
+  subTitle: string;
+  github: Github;
+}
+
 interface Props {
   images: string[];
   thumbnail: string;
+  width?: number | string;
+  notes: Notes;
 }
 interface State {
   photoIndex: number;
@@ -23,15 +36,35 @@ export default class ProjectLong extends Component<Props, State> {
 
   render() {
     const {photoIndex, isOpen} = this.state;
-    const {images, thumbnail} = this.props;
+    const {images, thumbnail, notes} = this.props;
 
     return (
-      <div>
+      <div className="projectWrapper">
         <div>
           <div onClick={() => this.setState({isOpen: true})}>
             <img src={thumbnail} className="imageLong" />
           </div>
-          <div>Notes</div>
+          <div className="notesWrapper">
+            <div className="notesTitle">{notes.title}</div>
+            <div className="notesSubTitle">{notes.subTitle}</div>
+            {notes.github.mobile ? (
+              <div className="githubWrapper">
+                <div className="github">Github:</div>
+                <a className="githubATag" href={notes.github.web} target={notes.github.web}>
+                  Web
+                </a>
+                <a className="githubATag" href={notes.github.mobile} target={notes.github.mobile}>
+                  Mobile
+                </a>
+              </div>
+            ) : (
+              <div className="githubWrapper">
+                <a className="githubATagSingle" href={notes.github.web} target={notes.github.web}>
+                  Github
+                </a>
+              </div>
+            )}
+          </div>
         </div>
         {isOpen && (
           <Lightbox
