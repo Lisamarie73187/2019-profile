@@ -3,14 +3,15 @@ import Lightbox from 'react-image-lightbox';
 import 'react-image-lightbox/style.css'; // This only needs to be imported once in your app
 
 interface Github {
-  mobile: string;
-  web: string;
+  mobile?: string;
+  web?: string;
 }
 
 interface Notes {
   title: string;
   subTitle: string;
-  github: Github;
+  github?: Github;
+  app?: string;
 }
 
 interface Props {
@@ -48,15 +49,31 @@ export default class LightboxExample extends Component<Props, State> {
           <div className="notesWrapper">
             <div className="notesTitle">{notes.title}</div>
             <div className="notesSubTitle">{notes.subTitle}</div>
-            <div className="githubWrapper">
-              <div className="github">Github:</div>
-              <a className="githubATag" href={notes.github.web} target={notes.github.web}>
-                Web
-              </a>
-              <a className="githubATag" href={notes.github.mobile} target={notes.github.mobile}>
-                Mobile
-              </a>
-            </div>
+            {notes.github && notes.github.mobile && (
+              <div className="githubWrapper">
+                <div className="github">Github:</div>
+                <a className="githubATag" href={notes.github.web} target={notes.github.web}>
+                  Web
+                </a>
+                <a className="githubATag" href={notes.github.mobile} target={notes.github.mobile}>
+                  Mobile
+                </a>
+              </div>
+            )}
+            {notes.github && notes.github.web && !notes.github.mobile && (
+              <div className="githubWrapper">
+                <a className="githubATagSingle" href={notes.github.web} target={notes.github.web}>
+                  Github
+                </a>
+              </div>
+            )}
+            {notes.app && (
+              <div className="githubWrapper">
+                <a className="githubATagSingle" href={notes.app} target={notes.app}>
+                  Checkout the App
+                </a>
+              </div>
+            )}
           </div>
         </div>
         {isOpen && (

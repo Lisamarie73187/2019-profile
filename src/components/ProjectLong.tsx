@@ -4,13 +4,14 @@ import 'react-image-lightbox/style.css'; // This only needs to be imported once 
 
 interface Github {
   mobile?: string;
-  web: string;
+  web?: string;
+  liveSite?: string;
 }
 
 interface Notes {
   title: string;
   subTitle: string;
-  github: Github;
+  github?: Github;
 }
 
 interface Props {
@@ -47,7 +48,7 @@ export default class ProjectLong extends Component<Props, State> {
           <div className="notesWrapper">
             <div className="notesTitle">{notes.title}</div>
             <div className="notesSubTitle">{notes.subTitle}</div>
-            {notes.github.mobile ? (
+            {notes.github && notes.github.mobile && (
               <div className="githubWrapper">
                 <div className="github">Github:</div>
                 <a className="githubATag" href={notes.github.web} target={notes.github.web}>
@@ -57,10 +58,21 @@ export default class ProjectLong extends Component<Props, State> {
                   Mobile
                 </a>
               </div>
-            ) : (
+            )}
+            {notes.github && notes.github.web && !notes.github.liveSite && (
               <div className="githubWrapper">
                 <a className="githubATagSingle" href={notes.github.web} target={notes.github.web}>
                   Github
+                </a>
+              </div>
+            )}
+            {notes.github && notes.github.liveSite && (
+              <div className="githubWrapperLiveSite">
+                <a className="githubATagSingle" href={notes.github.web} target={notes.github.web}>
+                  Github
+                </a>
+                <a className="githubATagSingle" href={notes.github.mobile} target={notes.github.mobile}>
+                  Live Site
                 </a>
               </div>
             )}

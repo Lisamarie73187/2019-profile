@@ -90,7 +90,7 @@
 }
 
 .projectWrapper:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .picture {
@@ -138,6 +138,17 @@
 .githubWrapper {
   display: flex;
   flex-direction: row;
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 18px;
+  color: #525252;
+  padding-top: 10px;
+}
+
+.githubWrapperLiveSite {
+  display: flex;
+  flex-direction: column;
   font-family: 'News Cycle', sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
