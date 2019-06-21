@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
-import {Home} from './pages/Home';
-
+import {Header} from './components/Header';
+import {RouterHome} from './RouterHome';
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Home />
+      <div className="homeWrapper">
+        <Header />
+        <RouterHome />
+      </div>
     </div>
   );
 };

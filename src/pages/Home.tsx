@@ -1,24 +1,13 @@
 import React from 'react';
 import {FaBehanceSquare, FaEnvelopeSquare, FaGithubSquare, FaLinkedin} from 'react-icons/fa';
-import LMHlogo from '../assets/LMHlogo.png';
+import {Header} from '../components/Header';
 import {Project} from '../components/Project';
 
 // a passionate creattive turned to a determined web/mobile developer consinstantly looking for the next challenge
 
 export const Home = () => {
   return (
-    <div className="homeWrapper">
-      <div className="headerContainer">
-        <div className="nameWrapper">
-          <img src={LMHlogo} height={40} width={40} />
-          <div className="name">Lisa Herzberg</div>
-        </div>
-        <div className="menuWrapper">
-          <div className="menu">About</div>
-          <div className="menu">Projects</div>
-          <div className="menu">Resume</div>
-        </div>
-      </div>
+    <div>
       <div className="heroContainer">
         <div className="aboutText">I am a passionate full stack developer with expertise in React and React Native</div>
         <div className="linksWrapper">
@@ -38,7 +27,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
-      <div className="border"/>
+      <div className="border" />
       <Project />
     </div>
   );
