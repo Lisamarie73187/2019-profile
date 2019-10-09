@@ -71,7 +71,7 @@ export default class ProjectLong extends Component<Props, State> {
                 <a className="githubATagSingle" href={notes.github.web} target={notes.github.web}>
                   Github
                 </a>
-                <a className="githubATagSingle" href={notes.github.mobile} target={notes.github.mobile}>
+                <a className="githubATagSingle" href={notes.github.liveSite} target={notes.github.liveSite}>
                   Live Site
                 </a>
               </div>

@@ -45,6 +45,10 @@
   font-size: 20px;
   letter-spacing: 1.5px;
 }
+.noDecor {
+  text-underline: none;
+  text-decoration: none;
+}
 
 .menu {
   padding: 0px 25px;
@@ -52,6 +56,17 @@
   color: #5a585d;
   letter-spacing: 1.5px;
   font-size: 18px;
+  text-decoration: none;
+}
+
+.menu:hover {
+  color: #FFA06C;
+  font-weight: bold;
+}
+
+.menu:active{
+  color: #FFA06C;
+  font-weight: bold;
 }
 
 .linksWrapper {
@@ -144,6 +159,7 @@
   font-size: 18px;
   color: #525252;
   padding-top: 10px;
+  cursor: pointer;
 }
 
 .githubWrapperLiveSite {
@@ -180,9 +196,12 @@
 
 .githubATag:hover {
   font-weight: 800;
+  color: #FFA06C;
 }
 
 .githubATagSingle:hover {
   font-weight: 800;
+  color: #FFA06C;
+
 }
 

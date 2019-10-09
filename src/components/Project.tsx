@@ -81,6 +81,36 @@ const scentricNotes = {
   },
 };
 
+const mealLoggerImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/mealLogger/mealLoggerHome.png';
+
+const mealLoggerImages = [
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricTech.png',
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricSecondpage.png',
+];
+
+const mealLoggerNotes = {
+  title: 'PERSONAL PROJECT',
+  subTitle: 'July 2019',
+  github: {
+    web: 'https://github.com/Lisamarie73187/meal-logger',
+  },
+};
+
+const sudokuImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/sudoku/sudokuThumbnail.png';
+
+const sudokuImages = [
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricTech.png',
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricSecondpage.png',
+];
+
+const sudokuNotes = {
+  title: 'FUN PERSONAL PROJECT',
+  subTitle: 'SEPT 2019',
+  github: {
+    web: 'https://github.com/Lisamarie73187/sudoku',
+  },
+};
+
 interface Props {}
 
 export const Project = (props: Props) => {
@@ -93,11 +123,11 @@ export const Project = (props: Props) => {
       <div>
         <ProjectLong images={rexImages} thumbnail={rexImage} notes={rexNotes} />
         <ProjectLong images={tictacttoeImages} thumbnail={tictactoeImage} notes={tictactoeNotes} />
-        <ProjectLong images={rexImages} thumbnail={rexImage} notes={goalsyNotes} />
+        <ProjectLong images={rexImages} thumbnail={sudokuImage} notes={sudokuNotes} />
       </div>
       <div>
         <LightboxExample images={gyftImages} thumbnail={gyftImage} notes={gyftNotes} />
-        <LightboxExample images={goalsyImages} thumbnail={goalsyImage} notes={goalsyNotes} />
+        <LightboxExample images={goalsyImages} thumbnail={mealLoggerImage} notes={mealLoggerNotes} />
       </div>
     </div>
   );

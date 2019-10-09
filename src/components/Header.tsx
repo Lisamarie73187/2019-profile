@@ -12,13 +12,13 @@ export const Header = () => {
           <div className="name">Lisa Herzberg</div>
         </div>
         <div className="menuWrapper">
-          <Link to="/About">
+          <Link to="/About" className="noDecor">
             <div className="menu">About</div>
           </Link>
-          <Link to="/">
+          <Link to="/" className="noDecor">
             <div className="menu">Projects</div>
           </Link>
-          <Link to="/About">
+          <Link to="/About" className="noDecor">
             <div className="menu">Resume</div>
           </Link>
         </div>
