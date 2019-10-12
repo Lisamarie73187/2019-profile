@@ -99,8 +99,8 @@ const mealLoggerNotes = {
 const sudokuImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/sudoku/sudokuThumbnail.png';
 
 const sudokuImages = [
-  'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricTech.png',
-  'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricSecondpage.png',
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/sudoku/SudokuSlideOne.png',
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/sudoku/SudokuSlideTwo.png',
 ];
 
 const sudokuNotes = {
@@ -123,7 +123,7 @@ export const Project = (props: Props) => {
       <div>
         <ProjectLong images={rexImages} thumbnail={rexImage} notes={rexNotes} />
         <ProjectLong images={tictacttoeImages} thumbnail={tictactoeImage} notes={tictactoeNotes} />
-        <ProjectLong images={rexImages} thumbnail={sudokuImage} notes={sudokuNotes} />
+        <ProjectLong images={sudokuImages} thumbnail={sudokuImage} notes={sudokuNotes} />
       </div>
       <div>
         <LightboxExample images={gyftImages} thumbnail={gyftImage} notes={gyftNotes} />
