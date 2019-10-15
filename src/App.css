@@ -22,6 +22,11 @@
   align-items: center;
 }
 
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
 .menuWrapper{
   display: flex;
   flex-direction: row;
@@ -33,7 +38,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   padding: 20px;
 }
 
@@ -112,11 +117,11 @@
 }
 
 .imageLong {
-  width: 420px;
+  width: 25vw;
 }
 
 .imageTall {
-  width: 330px;
+  width: 20vw;
 }
 
 .border {
@@ -205,3 +210,134 @@
 
 }
 
+.copy {
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+  .notesWrapper {
+    padding: 20px 10px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .App {
+    margin: 0px 5%;
+  }
+
+  .imageLong {
+    width: 30vw;
+  }
+
+  .imageTall {
+    width: 25vw;
+  }
+
+  .notesWrapper {
+    padding: 10px;
+  }
+
+  .notesTitle{
+    font-size: 16px;
+  }
+
+  .notesSubTitle{
+    font-size: 12px;
+  }
+
+  .githubWrapper {
+    font-size: 16px;
+  }
+
+  .githubWrapperLiveSite {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 780px) {
+  .projectContainer {
+    margin: 0;
+  }
+
+  .imageLong {
+    width: 33vw;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .App {
+    margin: 0px 0%;
+  }
+
+  .headerContainer{
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  .name {
+    padding-left: 10px;
+    font-family: 'News Cycle', sans-serif;
+    font-weight: 600;
+    color: #5a585d;
+    font-size: 20px;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .menuWrapper{
+    padding: 20px 0;
+  }
+
+  .heroContainer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .aboutText {
+    font-size: 25px;
+    width: 80%;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .linksWrapper {
+    padding-top: 20px;
+  }
+
+  .icon {
+    font-size: 35px;
+    padding: 40px 10px;
+  }
+
+  .border {
+    height: 1px;
+    width: 93%;
+    background-color: #bcb5bf;
+    margin: 0 20px;
+  }
+
+  .projectContainer {
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column;
+  }
+
+  .imageLong {
+    width: 85vw;
+  }
+
+  .imageTall {
+    width: 90vw;
+  }
+
+  .projectWrapper {
+    margin: auto;
+  }
+}

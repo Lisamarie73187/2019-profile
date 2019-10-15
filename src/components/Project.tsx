@@ -13,7 +13,7 @@ const goalsyImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/goalsy/thu
 
 const goalsyNotes = {
   title: 'PERSONAL PROJECT',
-  subTitle: 'January 2018 | Mobile January 2019',
+  subTitle: 'January 2018 | January 2019',
   github: {
     mobile: 'https://github.com/Lisamarie73187/goalsy-native',
     web: 'https://github.com/Lisamarie73187/goal-tracker',
@@ -84,7 +84,7 @@ const scentricNotes = {
 const mealLoggerImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/mealLogger/mealLoggerHome.png';
 
 const mealLoggerImages = [
-  'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricTech.png',
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/mealLogger/mealLogggerSlideOne.png',
   'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricSecondpage.png',
 ];
 
@@ -108,6 +108,7 @@ const sudokuNotes = {
   subTitle: 'SEPT 2019',
   github: {
     web: 'https://github.com/Lisamarie73187/sudoku',
+    liveSite: 'http://the-greatest-sudoku.surge.sh/',
   },
 };
 
@@ -127,7 +128,7 @@ export const Project = (props: Props) => {
       </div>
       <div>
         <LightboxExample images={gyftImages} thumbnail={gyftImage} notes={gyftNotes} />
-        <LightboxExample images={goalsyImages} thumbnail={mealLoggerImage} notes={mealLoggerNotes} />
+        <LightboxExample images={mealLoggerImages} thumbnail={mealLoggerImage} notes={mealLoggerNotes} />
       </div>
     </div>
   );

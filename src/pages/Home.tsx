@@ -29,6 +29,7 @@ export const Home = () => {
       </div>
       <div className="border" />
       <Project />
+      <div className="copy">©2019 Lisa Herzberg</div>
     </div>
   );
 };
