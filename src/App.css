@@ -27,6 +27,10 @@
   height: 40px;
 }
 
+.resumeLink {
+  text-decoration: none;
+}
+
 .menuWrapper{
   display: flex;
   flex-direction: row;
@@ -39,7 +43,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 20px;
+  padding: 50px 20px;
 }
 
 .name {
@@ -128,9 +132,34 @@
   height: 1px;
   width: 100%;
   background-color: #bcb5bf;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-bottom: 80px;
 }
+
+/*about*/
+.aboutMeWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profilePic {
+  height: 350px;
+  width: 350px;
+  margin: 20px;
+}
+
+.aboutMe {
+  padding: 40px 60px;
+}
+
+.aboutMeTitle {
+  font-family: 'News Cycle', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  font-size: 30px;
+  color: #525252;}
+
 
 /*notes*/
 

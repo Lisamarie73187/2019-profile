@@ -85,7 +85,7 @@ const mealLoggerImage = 'https://portfoliolisa.s3-us-west-1.amazonaws.com/mealLo
 
 const mealLoggerImages = [
   'https://portfoliolisa.s3-us-west-1.amazonaws.com/mealLogger/mealLogggerSlideOne.png',
-  'https://portfoliolisa.s3-us-west-1.amazonaws.com/scentric/scentricSecondpage.png',
+  'https://portfoliolisa.s3-us-west-1.amazonaws.com/mealLogger/mealLogggerSlideTwo.png',
 ];
 
 const mealLoggerNotes = {
