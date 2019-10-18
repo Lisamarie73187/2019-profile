@@ -1,5 +1,5 @@
 .App {
-  margin: 0px 15%;
+  margin: 0 15%;
 }
 
 /*.homeWrapper {*/
@@ -239,9 +239,44 @@
 
 }
 
+
+
+/*footer*/
+
 .copy {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  font-family: 'News Cycle', sans-serif;
+  color: #5a585d;
+  letter-spacing: 1.5px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.copyWrapper {
+  text-align: center;
+  color: #5a585d;
+}
+
+
+.footerWrapper {
+  background-color: #f1eff6;
+  padding: 80px;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footerLink {
+  padding: 0px 10px;
+  font-family: 'News Cycle', sans-serif;
+  color: #5a585d;
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1600px) {
