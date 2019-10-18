@@ -1,6 +1,6 @@
 import React from 'react';
-import LightboxExample from './LightboxProject';
-import ProjectLong from './ProjectLong';
+import LightboxExample from '../components/LightboxProject';
+import ProjectLong from '../components/ProjectLong';
 
 const goalsyImages = [
   'https://portfoliolisa.s3-us-west-1.amazonaws.com/goalsy/goalsyMainSliderPage.png',

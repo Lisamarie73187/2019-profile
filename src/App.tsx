@@ -12,7 +12,7 @@ const App: React.FC = () => {
           <RouterHome />
         </div>
       </div>
-        <Footer />
+      <Footer />
     </div>
   );
 };
