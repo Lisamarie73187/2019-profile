@@ -36,7 +36,7 @@ export const Header = () => {
             <FaBehanceSquare className="icon" />
           </a>
           <div>
-            <a href="mailto:lisamarieherzberg@gmail.com">
+            <a href="mailto:lisamarieherzberg@gmail.com" target="_blank">
               <FaEnvelopeSquare className="icon" />
             </a>
           </div>
