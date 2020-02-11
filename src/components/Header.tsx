@@ -18,7 +18,7 @@ export const Header = () => {
           <Link to="/" className="noDecor">
             <div className="menu">Projects</div>
           </Link>
-          <a href="https://indd.adobe.com/view/364c2a85-eab2-417b-ac78-b5b7b5d05670" target="_blank" className="resumeLink">
+          <a href="https://indd.adobe.com/view/e1b1329c-849d-411a-b6cb-56323525a734" target="_blank" className="resumeLink">
             <div className="menu">Resume</div>
           </a>
         </div>
