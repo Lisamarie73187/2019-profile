@@ -17,7 +17,7 @@ export const Footer = () => {
       </div>
       <div className="copyWrapper">
         {'\u00A9'}
-        <span className="copy">2019 Lisa Herzberg</span>
+        <span className="copy">2021 Lisa Herzberg</span>
       </div>
     </div>
   );

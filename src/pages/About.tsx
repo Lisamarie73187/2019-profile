@@ -16,8 +16,8 @@ export const About = () => {
         </p>
         <p>
           When I am not at my computer coding, you will typically find me behind crafts or enjoying the outdoors. I love learning and finding new activities and hobbies. I recently
-          have picked up knitting and before that I was making jewelry. If you see me outdoors, it will most likely be on bike, I love to cycle. I also enjoy running, hiking,
-          and kayaking. Feel free to message me I love meeting new people!
+          have picked up knitting and before that I was making jewelry. If you see me outdoors, it will most likely be on bike, running, hiking,
+          or kayaking. Feel free to message me I love meeting new people!
         </p>
       </div>
     </div>

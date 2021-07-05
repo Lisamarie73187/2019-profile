@@ -112,9 +112,8 @@ const sudokuNotes = {
   },
 };
 
-interface Props {}
 
-export const Project = (props: Props) => {
+export const Project = () => {
   return (
     <div className="projectContainer">
       <div>
