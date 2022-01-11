@@ -1,17 +1,17 @@
 import React from 'react';
 import { Notes } from '../types/Notes';
 
-interface IProjectLongProps {
+interface IProjectTallProps {
     thumbnail: string
     notes: Notes
 }
 
 
-const ProjectLong: React.FC<IProjectLongProps> = ({thumbnail, notes}) => {
+const ProjectTall: React.FC<IProjectTallProps> = ({thumbnail, notes}) => {
   return (
     <div className="projectContainer">
         <div>
-            <img src={thumbnail} className="imageLong" />
+            <img src={thumbnail} className="imageTall" />
             <div className="notesWrapper">
                 <div className="notesTitle">{notes.title}</div>
                 <div className="notesSubTitle">{notes.subTitle}</div>
@@ -26,14 +26,18 @@ const ProjectLong: React.FC<IProjectLongProps> = ({thumbnail, notes}) => {
                         </a>
                     </div>
                 )}
-                {notes.github && notes.github.liveSite && (
-                    <div className="githubWrapperLiveSite">
-                      <a className="githubATagSingle" href={notes.github.web} target={notes.github.web}>
-                        Github
-                      </a>
-                      <a className="githubATagSingle" href={notes.github.liveSite} target={notes.github.liveSite}>
-                        Live Site
-                      </a>
+                {notes.github && notes.github.web && !notes.github.mobile && (
+                    <div className="githubWrapper">
+                        <a className="githubATagSingle" href={notes.github.web} target={notes.github.web}>
+                            Github
+                        </a>
+                    </div>
+                )}
+                {notes.app && (
+                    <div className="githubWrapper">
+                        <a className="githubATagSingle" href={notes.app} target={notes.app}>
+                            Checkout the App
+                        </a>
                     </div>
                 )}
             </div>
@@ -41,4 +45,4 @@ const ProjectLong: React.FC<IProjectLongProps> = ({thumbnail, notes}) => {
     </div>
   );
 };
-export default ProjectLong
+export default ProjectTall

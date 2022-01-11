@@ -11,7 +11,7 @@ export const Footer = () => {
         <Link to="/" className="noDecor">
           <div className="footerLink">Projects</div>
         </Link>
-        <a href="https://indd.adobe.com/view/e1b1329c-849d-411a-b6cb-56323525a734" target="_blank" className="resumeLink">
+        <a href="mailto:lisamarieherzberg@gmail.com?subject=I%20have%20the%20perfect%20job%20for%20you!" target="_blank" className="resumeLink">
           <div className="footerLink">Resume</div>
         </a>
       </div>
